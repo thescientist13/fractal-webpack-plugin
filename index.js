@@ -6,7 +6,7 @@ bluebird.config({
 });
 
 try {
-    var fractal = require('./fractal.js');
+    var fractal = path.resolve(process.cwd(), './fractal.js');
 } catch (e) {
     var fractal = require('@frctl/fractal').create();
 }
